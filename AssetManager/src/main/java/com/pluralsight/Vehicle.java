@@ -47,6 +47,8 @@ public class Vehicle extends Asset {
     @Override
     public double getValue() {
 
+        // Creates a calendar and gets the year from the current date
+        // and stores it in current year
         int currentYear = Calendar.getInstance().get(Calendar.YEAR);
         int age = currentYear - year;
         double value = getOriginalCost();

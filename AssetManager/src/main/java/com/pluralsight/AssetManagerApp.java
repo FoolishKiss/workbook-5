@@ -23,9 +23,11 @@ public class AssetManagerApp {
             System.out.printf("Original Cost: $%.2f\n", asset.getOriginalCost());
             System.out.printf("Current Value: $%.2f\n", asset.getValue());
 
-            // Instanceof to get specific details of assets
+            // Instanceof to print out specific details of assets
+            //Checks to see if asset is a House and if true puts it in variable house
             if (asset instanceof House house) {
                 System.out.println("Address: " + house.getAddress());
+              //Checks to see if asset is a Vehicle and if true puts it in variable vehicle
             } else if (asset instanceof Vehicle vehicle) {
                 System.out.println("Make/ Model: " + vehicle.getMakeModel());
                 System.out.println("Year: " + vehicle.getYear() + "\n");
